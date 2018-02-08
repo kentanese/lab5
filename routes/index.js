@@ -3,7 +3,5 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
 	console.log(data);
-	res.render('index', {
-		'myFriends':data['friends']
-		});
+	res.render('index', {'myFriends':data['friends']});
 };

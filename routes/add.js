@@ -10,4 +10,5 @@ exports.addFriend = function(req, res) { 
 	}
 	console.log(object);
 	data.friends.push(object);
+	res.render('index', {'myFriends':data['friends']});
  }
